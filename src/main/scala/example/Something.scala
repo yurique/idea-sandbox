@@ -1,6 +1,6 @@
-package something
+package example
 
-trait Something[F[_]] {
+trait Something {
 
   def method1(): Unit
 
@@ -8,7 +8,7 @@ trait Something[F[_]] {
 
 object Something {
 
-  def apply[F[_]](): Something[F] = new Something[F] {
+  def apply(): Something = new Something {
 
     def method1(): Unit = println("hi")
 

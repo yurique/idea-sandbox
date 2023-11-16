@@ -1,8 +1,6 @@
 package example
 
-import something.Something
-
-class Hello[F[_]](something: Something[F]) {
+class Hello(something: Something) {
 
   something.method1()
 
